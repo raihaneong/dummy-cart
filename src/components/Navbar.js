@@ -1,3 +1,4 @@
+/* eslint-disable */
 import {Button, Container, Navbar, Modal} from 'react-bootstrap';
 import { useState, useContext } from 'react';
 import { CartContext } from "../CartContext";

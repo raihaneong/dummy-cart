@@ -12,7 +12,7 @@ function NavbarComponent() {
     const handleShow = () => setShow(true);
 
     const checkout = async () => {
-        await fetch('http://localhost:4000/checkout', {
+        await fetch('https://dummy-cart-api.vercel.app/checkout', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

@@ -2,7 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavbarComponent from "./components/Navbar"
 
 import Store from "./pages/Store"
-import Error from "./pages/Error"
+import NotFound from "./pages/NotFound"
+import Cancel from "./pages/Cancel"
+import Success from "./pages/Success"
 
 
 
@@ -13,7 +15,9 @@ export default function App() {
             <BrowserRouter>
                 <Routes>
                     <Route index element={ <Store />} />
-                    <Route path="/Error" element={ <Error />} />
+                    <Route path="/*" element={ <NotFound />} />
+                    <Route path="/Cancel" element={ <Cancel />} />
+                    <Route path="/Success" element={ <Success/>} />
                 </Routes>
             </BrowserRouter>
 

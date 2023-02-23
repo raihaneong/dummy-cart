@@ -10,7 +10,7 @@ import Success from "./pages/Success"
 
 export default function App() {
     return (
-        <>
+        <div >
             <NavbarComponent></NavbarComponent>
             <BrowserRouter>
                 <Routes>
@@ -21,6 +21,6 @@ export default function App() {
                 </Routes>
             </BrowserRouter>
 
-        </>
+        </ div>
     )
 }

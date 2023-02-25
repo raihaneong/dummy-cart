@@ -39,8 +39,14 @@ const productsData = [
 
 ]
 
+function getProductData(product) {
+    return productsData.find(p => p.id === product.id);
+
+    if (productsData == undefined) {
+        console.log(`Product with id ${product.id} not found`);
+    }
+}
 
 
 
-
-export default { productsData};
+export default { productsData, getProductData };

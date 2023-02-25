@@ -1,7 +1,9 @@
 import productsData from "../Constant/productsData"
+import ProductsCart from "../components/ProductsCart"
 
 
 export default function Store(){
+
     return(
         <div className="container mx-auto">
             <h1 className=" m-8 p-8 text-5xl">welcome</h1>
@@ -9,6 +11,7 @@ export default function Store(){
             <p>take a look</p>
             <p></p>
             <br />
+            < ProductsCart />
             <hr />
             <br />
             <a href="success">success | </a>

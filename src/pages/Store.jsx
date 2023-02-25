@@ -1,4 +1,4 @@
-
+import productsData from "../Constant/productsData"
 
 
 export default function Store(){
@@ -7,6 +7,7 @@ export default function Store(){
             <h1 className=" m-8 p-8 text-5xl">welcome</h1>
             <h2>what do you wanna buy</h2>
             <p>take a look</p>
+            <p></p>
             <br />
             <hr />
             <br />

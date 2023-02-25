@@ -39,15 +39,15 @@ const productsArray = [
 
 ]
 
-// function getProductData(product) {
-//     let prod =  productsData.find(p => p.id === product.id);
+function getProductData(product) {
+    let prod =  productsData.find(p => p.id === product.id);
 
-//     if (productsData == undefined) {
-//         console.log(`Product with id ${product.id} not found`);
-//     }
-//     return prod
-// }
+    if (productsData == undefined) {
+        console.log(`Product with id ${product.id} not found`);
+    }
+    return prod
+}
 
 
 
-export default { productsArray };
+export { productsArray };

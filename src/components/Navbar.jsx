@@ -8,6 +8,23 @@ export default function Navbar() {
     const cart = useContext(CartContext)
     const itemInCart = cart.cartItems.reduce((sum, item) => sum + item.quantity, 0)
     console.log(cart.cartItems)
+
+    const checkout = async () => {
+        await fetch('http://localhost:4000/checkout', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({ items: cart.cartItems })
+        }).then((response) => {
+            return response.json()
+        }).then((data) => {
+            if (data.url) {
+                window.location.assign(data.url)
+            }
+        })
+    }
+
     return (
         <>
             <div className="navbar bg-base-100 p-8 drop-shadow-lg hover:drop-shadow-2xl duration-700">
@@ -46,7 +63,7 @@ export default function Navbar() {
 
                             ))}
                             <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
-                            <button className="btn btn-success text-slate-100 mt-4">Checkout</button>
+                            <button className="btn btn-success text-slate-100 mt-4" onClick={checkout}>Checkout</button>
                         </>
 
                         :

@@ -35,15 +35,15 @@ const productsArray = [
         name: "Bag",
         price: 15,
         description: "Bag to carry your stuff",
-    },
+    }, 
 
 ]
 
-function getProductData(product) {
-    let products =  productsArray.find(p => p.id === id);
+function getProductData(id) {
+    let products =  productsArray.find(product => product.id === id);
 
     if (products == undefined) {
-        console.log(`Product with id ${product.id} not found`);
+        console.log(`Product with id  not found`);
     }
     return products
 }

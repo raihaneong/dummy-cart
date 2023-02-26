@@ -6,7 +6,6 @@ import { CartContext } from "../Context/CartContext"
 export default function ProductsCard({ name, price, description, id }) {
     const cart = useContext(CartContext)
     const productQuantity = cart.getProductQuantity(id)
-    console.log(cart.cartItems)
 
     return (
         <div className="card w-72 bg-base-100 shadow-xl">

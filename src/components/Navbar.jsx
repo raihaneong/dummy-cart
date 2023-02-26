@@ -3,9 +3,11 @@ import { CartContext } from "../Context/CartContext"
 import ItemInCart from "./ItemInCart"
 
 
+
 export default function Navbar() {
     const cart = useContext(CartContext)
     const itemInCart = cart.cartItems.reduce((sum, item) => sum + item.quantity, 0)
+    console.log(cart.cartItems)
     return (
         <>
             <div className="navbar bg-base-100 p-8 drop-shadow-lg hover:drop-shadow-2xl duration-700">

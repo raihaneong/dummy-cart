@@ -25,7 +25,7 @@ export default function Navbar() {
                         <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
                             <div className="card-body">
                                 <span className="font-bold text-lg">{itemInCart} Items</span>
-                                <span className="text-info">Subtotal: ${cart.getTotalCost()}</span>
+                                <span className="text-info">Subtotal: ${cart.getTotalCost().toFixed(2)}</span>
                                 <div className="card-actions">
                                     <label htmlFor="my-modal-3" className="btn">View cart</label>
                                 </div>

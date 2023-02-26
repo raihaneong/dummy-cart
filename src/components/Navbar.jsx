@@ -25,7 +25,7 @@ export default function Navbar() {
                         <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
                             <div className="card-body">
                                 <span className="font-bold text-lg">{itemInCart} Items</span>
-                                <span className="text-info">Subtotal: ${ cart.getTotalCost()}</span>
+                                <span className="text-info">Subtotal: ${cart.getTotalCost()}</span>
                                 <div className="card-actions">
                                     <label htmlFor="my-modal-3" className="btn">View cart</label>
                                 </div>
@@ -42,10 +42,11 @@ export default function Navbar() {
                     {itemInCart > 0 ?
                         <>
                             {cart.cartItems.map((item, index) => (
-                                <ItemInCart key={index} id={item.id} quantity={item.quantity} price={item.price}/>
+                                <ItemInCart key={index} id={item.id} quantity={item.quantity} price={item.price} />
 
                             ))}
                             <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+                            <button className="btn btn-success text-slate-100 mt-4">Checkout</button>
                         </>
 
                         :
@@ -54,7 +55,6 @@ export default function Navbar() {
                         </>
 
                     }
-                <button className="btn btn-success text-slate-100 mt-4">Checkout</button>
                 </div>
             </div>
 

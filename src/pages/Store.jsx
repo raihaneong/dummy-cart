@@ -11,7 +11,7 @@ export default function Store() {
 
     return (
         <>
-            <div className="grid grid-cols-4 gap-8 p-32">
+            <div className="grid grid-cols-5 gap-8 p-32">
                 {ProductsCardElement}
             </div>
 

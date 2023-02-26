@@ -4,7 +4,7 @@ import {CartContext} from "../Context/CartContext"
 
 export default function ProductsCard( {name, price, description, id}) {
     const cart = useContext(CartContext)
-    // const productQuantity = cart.getProductQuantity(id)
+    const productQuantity = cart.getProductQuantity(id)
     console.log(cart.cartItems)
 
     return (
@@ -15,7 +15,16 @@ export default function ProductsCard( {name, price, description, id}) {
                 <p className="card-subtitle">$ {price}</p>
                 <p>{description}</p>
                 <div className="card-actions justify-end">
+                    {productQuantity > 0 ?
+                        <>
+                            <p className="font-bold">In cart: {productQuantity}</p>
+                            <button className="btn">sfa</button>
+                            <button className="btn">sfa</button>
+                        </>
+                        :
                     <button className="btn btn-primary" onClick={() => cart.addOne(id)} >Add to Cart</button>
+                    
+                }
                 </div>
             </div>
         </div>

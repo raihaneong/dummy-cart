@@ -14,13 +14,13 @@ export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
 
   function getProductQuantity(id) {
-    let itemsQuantity = cartItems.find(
-      (items) => items.product.id === id
+    const quantity = cartItems.find(
+      (items) => items.id === id
     )?.quantity;
-    if (itemsQuantity == undefined) {
+    if (quantity == undefined) {
       return 0;
     }
-    return itemsQuantity;
+    return quantity;
   }
 
   function addOne(id) {
@@ -74,7 +74,7 @@ export function CartProvider({ children }) {
   }
 
   const cartContext = {
-    cartItems: items,
+    cartItems: cartItems,
     getProductQuantity,
     addOne,
     removeOne,

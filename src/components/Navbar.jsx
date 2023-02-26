@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { CartContext } from "../Context/CartContext"
+import ItemInCart from "./ItemInCart"
 
 
 export default function Navbar() {
@@ -39,7 +40,7 @@ export default function Navbar() {
                     {itemInCart > 0 ?
                         <>
                             {cart.cartItems.map((item, index) => (
-                                <h1>{item.id}</h1>
+                                <ItemInCart key={index} id={item.id} quantity={item.quantity} />
 
                             ))}
                             <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>

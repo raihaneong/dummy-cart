@@ -1,8 +1,9 @@
 
 import { useContext } from "react"
-import {CartContext} from "../Context/CartContext"
+import { CartContext } from "../Context/CartContext"
 
-export default function ProductsCard( {name, price, description, id}) {
+
+export default function ProductsCard({ name, price, description, id }) {
     const cart = useContext(CartContext)
     const productQuantity = cart.getProductQuantity(id)
     console.log(cart.cartItems)
@@ -23,9 +24,9 @@ export default function ProductsCard( {name, price, description, id}) {
                             <button className="btn btn-error" onClick={() => cart.removeAll(id)}>X</button>
                         </>
                         :
-                    <button className="btn btn-primary" onClick={() => cart.addOne(id)} >Add to Cart</button>
-                    
-                }
+                        <button className="btn btn-primary" onClick={() => cart.addOne(id)} >Add to Cart</button>
+
+                    }
                 </div>
             </div>
         </div>

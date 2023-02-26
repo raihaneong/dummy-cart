@@ -4,7 +4,7 @@
 export default function Navbar() {
     return (
         <>
-            <div className="navbar bg-base-100 p-8">
+            <div className="navbar bg-base-100 p-8 drop-shadow-lg hover:drop-shadow-2xl duration-700">
                 <div className="flex-1">
                     <a href="/" className="btn btn-ghost normal-case text-2xl">rhntp store</a>
                 </div>

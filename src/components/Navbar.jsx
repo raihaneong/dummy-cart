@@ -10,7 +10,7 @@ export default function Navbar() {
     console.log(cart.cartItems)
 
     const checkout = async () => {
-        await fetch('http://dummy-cart-api/checkout', {
+        await fetch('https://dummy-cart-api.vercel.app/checkout', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

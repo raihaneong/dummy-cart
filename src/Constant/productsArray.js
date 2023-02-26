@@ -40,9 +40,9 @@ const productsArray = [
 ]
 
 function getProductData(product) {
-    let products =  productsArray.find(p => p.id === product.id);
+    let products =  productsArray.find(p => p.id === id);
 
-    if (productsData == undefined) {
+    if (products == undefined) {
         console.log(`Product with id ${product.id} not found`);
     }
     return products

@@ -18,8 +18,8 @@ export default function ProductsCard( {name, price, description, id}) {
                     {productQuantity > 0 ?
                         <>
                             <p className="font-bold">In cart: {productQuantity}</p>
-                            <button className="btn">sfa</button>
-                            <button className="btn">sfa</button>
+                            <button className="btn">+</button>
+                            <button className="btn">-</button>
                         </>
                         :
                     <button className="btn btn-primary" onClick={() => cart.addOne(id)} >Add to Cart</button>

@@ -10,9 +10,8 @@ export default function ProductsCard({ name, price, description, id}) {
                 <h2 className="card-title">{name}</h2>
                 <p className="card-subtitle">$ {price}</p>
                 <p>{description}</p>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button className="btn btn-primary">Add to Cart</button>
                     <p>{id}</p>
                 </div>
             </div>

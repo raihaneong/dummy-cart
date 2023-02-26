@@ -10,7 +10,7 @@ export default function ProductsCard( {name, price, description, id}) {
     return (
         <div className="card w-72 bg-base-100 shadow-xl">
             <figure><img src="https://picsum.photos/400/200" alt="Shoes" /></figure>
-            <div className="card-body">
+            <div className="card-body p-7">
                 <h2 className="card-title">{name}</h2>
                 <p className="card-subtitle">$ {price}</p>
                 <p>{description}</p>
@@ -20,6 +20,7 @@ export default function ProductsCard( {name, price, description, id}) {
                             <p className="font-bold">In cart: {productQuantity}</p>
                             <button className="btn" onClick={() => cart.addOne(id)}>+</button>
                             <button className="btn" onClick={() => cart.removeOne(id)}>-</button>
+                            <button className="btn btn-error" onClick={() => cart.removeAll(id)}>X</button>
                         </>
                         :
                     <button className="btn btn-primary" onClick={() => cart.addOne(id)} >Add to Cart</button>

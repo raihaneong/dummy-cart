@@ -22,7 +22,7 @@ export default function Navbar() {
                         <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
                             <div className="card-body">
                                 <span className="font-bold text-lg">{itemInCart} Items</span>
-                                <span className="text-info">Subtotal: $999</span>
+                                <span className="text-info">Subtotal: ${ cart.getTotalCost()}</span>
                                 <div className="card-actions">
                                     <label htmlFor="my-modal-3" className="btn">View cart</label>
                                 </div>
@@ -35,22 +35,23 @@ export default function Navbar() {
             <div className="modal">
                 <div className="modal-box relative">
                     <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2 bg-red-600 hover:bg-red-900">✕</label>
+                    <h3 className="text-lg font-bold">Your Cart</h3>
                     {itemInCart > 0 ?
                         <>
-                            <h3 className="text-lg font-bold">fsd</h3>
                             {cart.cartItems.map((item, index) => (
-                                <h1>{ item.title}</h1>
+                                <h1>{item.id}</h1>
+
                             ))}
-                            <h1>Total: {cart.getTotalCost()}</h1>
+                            <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
                         </>
 
                         :
                         <>
-                            <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-                            <h3 className="text-lg font-bold">Congratulations random Internet user!</h3>
+                            <p className="py-4 mt-4">Nothing's here</p>
                         </>
 
                     }
+                <button className="btn btn-success text-slate-100 mt-4">Checkout</button>
                 </div>
             </div>
 

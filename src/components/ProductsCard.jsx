@@ -8,7 +8,7 @@ export default function ProductsCard( {name, price, description, id}) {
     console.log(cart.cartItems)
 
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-72 bg-base-100 shadow-xl">
             <figure><img src="https://picsum.photos/400/200" alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>

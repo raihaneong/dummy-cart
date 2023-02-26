@@ -48,9 +48,9 @@ export function CartProvider({ children }) {
       removeAll(id);
     } else {
       setCartItems(
-        cartItems.map((item) => {
-          item.id === id ? { ...item, quantity: item.quantity - 1 } : item;
-        })
+        cartItems.map((item) =>
+          item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+        )
       );
     }
     return quantity;

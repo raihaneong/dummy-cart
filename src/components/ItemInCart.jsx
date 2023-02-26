@@ -5,14 +5,14 @@ import { getProductData } from "../Constant/productsArray";
 
 function ItemInCart(props) {
     const cart = useContext(CartContext)
-    const productData = getProductData(id)
+    const productData = getProductData(props.id)
 
     return (
         <>
-            <h1>{productData.title}</h1>
+            <h1>{productData.name}</h1>
             <p>{props.quantity}</p>
             <p>$ {(props.quantity * productData.price).toFixed(2)} </p>
-            <button className="btn btn-error" onClick={() => cart.removeAll(id)}>Remove</button>
+            <button className="btn btn-error" onClick={() => cart.removeAll(props.id)}>Remove</button>
             <hr />
         </>
     )

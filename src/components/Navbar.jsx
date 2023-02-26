@@ -40,7 +40,7 @@ export default function Navbar() {
                     {itemInCart > 0 ?
                         <>
                             {cart.cartItems.map((item, index) => (
-                                <ItemInCart key={index} id={item.id} quantity={item.quantity} />
+                                <ItemInCart key={index} id={item.id} quantity={item.quantity} price={item.price}/>
 
                             ))}
                             <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>

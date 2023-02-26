@@ -36,6 +36,7 @@ export default function Navbar() {
                     <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
                 </div>
             </div>
+            
         </>
     )
 }

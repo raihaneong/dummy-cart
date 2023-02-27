@@ -2,7 +2,9 @@ This project is created with:
 
 <div align="left">
 
+<a href="https://vitejs.dev/">
 <img src="https://vitejs.dev/logo-with-shadow.png" width="10%">
+</a>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width="10%">
 <img src="https://static-00.iconduck.com/assets.00/react-router-icon-512x279-zswz065s.png" width="12%">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" width="10%">
@@ -14,7 +16,7 @@ This project is created with:
 
 <div align="left">
 
-published to netlify and vercel 
+published to:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/2560px-Netlify_logo.svg.png" width="20%">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/2560px-Vercel_logo_black.svg.png" width="20%">

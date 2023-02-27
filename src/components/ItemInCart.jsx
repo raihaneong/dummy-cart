@@ -11,8 +11,11 @@ function ItemInCart(props) {
         <>
             <h1 className="font-bold">{productData.name}</h1>
             <p>amount: {props.quantity}</p>
+            <span className="flex justify-between p-4">
             <p>$ {(props.quantity * productData.price).toFixed(2)} </p>
             <button className="btn btn-error" onClick={() => cart.removeAll(props.id)}>Remove</button>
+            </span>
+                
             <hr />
         </>
     )

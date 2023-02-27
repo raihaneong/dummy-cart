@@ -22,19 +22,19 @@ const productsArray = [
         id: 'price_1MfmD8K6L9E8BuRsRyaGJ2be',
         name: "Laptop",
         price: 1499.99,
-        description: "a laptop to work from home",
+        description: "a laptop to work from home or school",
     },
     {
         id: 'price_1MfmDoK6L9E8BuRszIcubN8P',
         name: "Camera",
         price: 30.49,
-        description: "Take pictures with this camera",
+        description: "Take pictures with this camera to remember your memories",
     },
     {
         id: 'price_1MfmESK6L9E8BuRsN60BLMe1',
         name: "Bag",
         price: 14.99,
-        description: "Bag to carry your stuff",
+        description: "Bag to carry your stuff around",
     }, 
 
 ]

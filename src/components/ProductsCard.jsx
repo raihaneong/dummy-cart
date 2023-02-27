@@ -11,7 +11,7 @@ export default function ProductsCard({ name, price, description, id }) {
         <div className="pt-40">
 
         <div className="card w-72 bg-base-100 shadow-xl">
-            <figure><img src="https://picsum.photos/400/200" alt="Shoes" /></figure>
+            <figure><img src="" alt={name} /></figure>
             <div className="card-body p-7">
                 <h2 className="card-title">{name}</h2>
                 <p className="card-subtitle">$ {price}</p>

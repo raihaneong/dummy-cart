@@ -12,7 +12,11 @@ This project is created with:
 
 </div>
 
+<div align="left">
+
 published to netlify and vercel 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/2560px-Netlify_logo.svg.png" width="20%">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/2560px-Vercel_logo_black.svg.png" width="20%">
+
+</div>

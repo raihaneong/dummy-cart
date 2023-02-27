@@ -2,7 +2,7 @@ This project is created with:
 
 <div align="left">
 
-<a href="https://vitejs.dev/">
+<a href="https://vitejs.dev/" target="_blank">
 <img src="https://vitejs.dev/logo-with-shadow.png" width="10%">
 </a>
 <a href="https://reactjs.org/">

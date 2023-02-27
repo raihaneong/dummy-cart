@@ -56,6 +56,7 @@ export default function Navbar() {
                 <div className="modal-box relative">
                     <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2 bg-red-600 hover:bg-red-900">✕</label>
                     <h3 className="text-lg font-bold">Your Cart</h3>
+                    <hr className="mb-4"/>
                     {itemInCart > 0 ?
                         <>
                             {cart.cartItems.map((item, index) => (

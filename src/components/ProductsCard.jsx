@@ -8,6 +8,8 @@ export default function ProductsCard({ name, price, description, id }) {
     const productQuantity = cart.getProductQuantity(id)
 
     return (
+        <div className="pt-4 m-1">
+
         <div className="card w-72 bg-base-100 shadow-xl">
             <figure><img src="https://picsum.photos/400/200" alt="Shoes" /></figure>
             <div className="card-body p-7">
@@ -29,5 +31,6 @@ export default function ProductsCard({ name, price, description, id }) {
                 </div>
             </div>
         </div>
+                        </div>
     )
 }

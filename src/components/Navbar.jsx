@@ -10,6 +10,7 @@ export default function Navbar() {
     console.log(cart.cartItems)
 
     const checkout = async () => {
+        alert("wait for a moment, we are redirecting you to the payment page")
         await fetch('https://dummy-cart-api.vercel.app/checkout', {
             method: "POST",
             headers: {

@@ -39,3 +39,8 @@ published to:
 </a>
 
 </div>
+
+---
+potential feature would be added:
+- user account
+- seller dashboard
